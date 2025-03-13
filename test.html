@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Textbox über Bild</title>
+  <style>
+    /* Container für Bild und Text */
+    .image-container {
+      position: relative;
+      width: 500px; /* Breite des Containers */
+      height: 300px; /* Höhe des Containers */
+    }
+
+    /* Bild */
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Bild passend zuschneiden */
+    }
+
+    /* Textbox */
+    .textbox {
+      position: absolute; /* Position relativ zum Container */
+      top: 50%; /* Zentrierung vertikal */
+      left: 50%; /* Zentrierung horizontal */
+      transform: translate(-50%, -50%); /* Genau in die Mitte */
+      background-color: rgba(255, 255, 255, 0.7); /* Weiße Box mit Transparenz */
+      padding: 20px; /* Abstand innerhalb der Box */
+      border-radius: 10px; /* Abgerundete Ecken */
+      text-align: center; /* Text zentrieren */
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      color: #333; /* Textfarbe */
+    }
+  </style>
+</head>
+<body>
+<div class="image-container">
+  <img src="img/Bild_Hintergrund_Haus_Vektor.png" alt="Hintergrundbild">
+  <div class="textbox">
+    <h2>Willkommen</h2>
+    <p>Das ist eine Textbox über einem Bild.</p>
+  </div>
+</div>
+</body>
+</html>
