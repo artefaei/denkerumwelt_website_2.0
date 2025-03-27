@@ -635,6 +635,21 @@ hbig {
   margin: auto;
 }
 
+@media (max-width: 800px) {
+  .job-grid {
+    grid-template-columns: 1fr; /* Nur die kleinen Job-Quadrate untereinander */
+  }
+
+  .job-box1, .job-box2, .job-box3, .job-box4 {
+    width: 100%; /* Volle Breite für die kleinen Quadrate */
+  }
+
+  .large {
+    grid-row: span 2; /* Große Box bleibt gleich */
+    grid-column: 1; /* Bleibt links fixiert */
+  }
+}
+
 .job-box-large {
   background: #501414;
   padding: 60px; /* Gleiche Größe wie accordion-header-job */
