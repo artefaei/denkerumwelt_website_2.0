@@ -752,7 +752,7 @@ hbig {
 /* Responsive Anpassung */
 @media (max-width: 800px) {
   .job-grid {
-    grid-template-columns: 1fr; /* Einspaltiges Layout */
+    grid-template-columns: 1fr 1fr; /* Einspaltiges Layout */
   }
 
   .large {
