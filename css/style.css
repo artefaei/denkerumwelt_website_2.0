@@ -637,19 +637,22 @@ hbig {
 
 @media (max-width: 800px) {
   .job-grid {
-    grid-template-columns: 1fr; /* Alle Elemente untereinander */
+    grid-template-columns: 1fr; /* Eine Spalte für alles */
   }
 
-  /* Die große Box soll nicht mehr über zwei Reihen gehen */
+  /* Die große Box soll sich nicht mehr über zwei Reihen erstrecken */
   .large {
-    grid-row: auto; /* Normale Reihenfolge */
+    grid-row: auto; 
+    grid-column: auto;
   }
 
-  /* Die kleinen Quadrate untereinander */
+  /* Die kleinen Job-Boxen sollen alle untereinander sein */
   .job-box1, .job-box2, .job-box3, .job-box4 {
-    width: 100%; /* Volle Breite */
+    grid-column: auto; 
+    grid-row: auto; 
+    width: 100%; /* Volle Breite, aber nicht riesig */
     aspect-ratio: unset; /* Entfernt das quadratische Verhältnis */
-    padding: 40px; /* Falls nötig, Padding reduzieren */
+    padding: 40px; /* Optional, falls sie zu groß wirken */
   }
 }
 
