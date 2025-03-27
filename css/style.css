@@ -767,17 +767,6 @@ hbig {
   grid-row: span 2; /* 2 Reihen hoch */
 }
 
-/* Responsive Anpassung */
-@media (max-width: 800px) {
-  .job-grid {
-    grid-template-columns: 1fr 1fr; /* Einspaltiges Layout */
-  }
-
-  .large {
-    grid-row: auto;
-  }
-}
-
 .job-box-gut1 {
   display: grid;
   grid-template-columns: 1fr 1fr; /* 2 Spalten */
