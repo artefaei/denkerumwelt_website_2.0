@@ -634,11 +634,6 @@ hbig {
   margin: auto;
 }
 
-@media (max-width: 800px) {
-  .job-grid {
-    grid-template-columns: 1fr; /* Eine Spalte für alles */
-  }
-
   /* Die große Box soll sich nicht mehr über zwei Reihen erstrecken */
   .large {
     grid-row: auto; 
@@ -1007,38 +1002,4 @@ hbig {
   text-align: center;
   position: relative;
   margin: 40px auto 40px auto;
-}
-
-@media (max-width: 800px) {
-  .job-grid {
-    grid-template-columns: 1fr; /* Eine Spalte */
-    grid-template-rows: auto; /* Automatische Höhe */
-  }
-
-  /* Die große Box nicht mehr über mehrere Zeilen */
-  .large {
-    grid-row: auto;
-    grid-column: auto;
-  }
-
-  /* Alle kleinen Boxen untereinander */
-  .job-box1, .job-box2, .job-box3, .job-box4, .job-box-large {
-    grid-column: auto;
-    grid-row: auto;
-    width: 100%;
-    aspect-ratio: unset;
-    padding: 40px;
-  }
-
-  /* Optional: kleinere Schriftgröße, wenn nötig */
-  .job-box1, .job-box2, .job-box3, .job-box4, .job-box-large {
-    font-size: 16px;
-  }
-
-  /* Falls nötig, Layout für .job-box-gut1 anpassen */
-  .job-box-gut1 {
-    grid-template-columns: 1fr;
-    padding: 40px;
-    padding-left: 40px;
-  }
 }
