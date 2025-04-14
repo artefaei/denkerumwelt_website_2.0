@@ -628,26 +628,11 @@ hbig {
 
 .job-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr; /* 3 Spalten */
+  grid-template-rows: auto; /* Flexible Höhen */
   gap: 0px;
   max-width: 100%;
   margin: auto;
-}
-
-  /* Die große Box soll sich nicht mehr über zwei Reihen erstrecken */
-  .large {
-    grid-row: auto; 
-    grid-column: auto;
-  }
-
-  /* Die kleinen Job-Boxen sollen alle untereinander sein */
-  .job-box1, .job-box2, .job-box3, .job-box4 {
-    grid-column: auto; 
-    grid-row: auto; 
-    width: 100%; /* Volle Breite, aber nicht riesig */
-    aspect-ratio: unset; /* Entfernt das quadratische Verhältnis */
-    padding: 40px; /* Optional, falls sie zu groß wirken */
-  }
 }
 
 .job-box-large {
@@ -762,6 +747,17 @@ hbig {
 /* Linke große Box */
 .large {
   grid-row: span 2; /* 2 Reihen hoch */
+}
+
+/* Responsive Anpassung */
+@media (max-width: 800px) {
+  .job-grid {
+    grid-template-columns: 1fr; /* Einspaltiges Layout */
+  }
+
+  .large {
+    grid-row: auto;
+  }
 }
 
 .job-box-gut1 {
